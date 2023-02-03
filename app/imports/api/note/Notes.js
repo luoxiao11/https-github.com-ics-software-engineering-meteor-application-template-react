@@ -10,6 +10,7 @@ class NotesCollection {
     // The name of this collection.
     this.name = 'NotesCollection';
     // Define the Mongo collection.
+    this.collection = new Mongo.Collection(this.name);
     // Define the structure of each document in the collection.
     this.schema = new SimpleSchema({
       note: String,
